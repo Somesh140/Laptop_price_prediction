@@ -1,5 +1,5 @@
 # Laptop Price Predictor Project
-This is a regression project which predict sthe price of the laptop based on the configuration if the laptop.
+This is a regression project which predict sthe price of the laptop based on the configuration of the laptop.
 
 Application deployed on streamlit [CLICK](https://somesh140-laptop-price-prediction-app-gmcnau.streamlit.app/)
 
