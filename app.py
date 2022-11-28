@@ -8,7 +8,7 @@ import pandas as pd
 pipe=pickle.load(open('pipe.pkl','rb'))
 df=pickle.load(open('df.pkl','rb'))
 
-st.title("Laptop Predictor")
+st.title("Laptop Price Predictor")
 
 
 company=st.selectbox('Brand',df['Company'].unique())
@@ -17,7 +17,7 @@ type =st.selectbox('Type of Laptop',df['TypeName'].unique())
 
 ram = st.selectbox('RAM(in GB)',df['Ram'].unique())
 
-weight = st.slider('weight of laptop', 0.5, 4.0, 1.0)
+weight = st.slider('Weight of laptop(in kg)', 0.5, 4.0, 1.0)
 
 touchscreen = st.selectbox('Touchscreen',['No','Yes'])
 
@@ -58,4 +58,4 @@ if st.button('Predict Price'):
     query = query.reshape(1,12)
     print(query)
     print(int(np.exp(pipe.predict(query)[0])))
-    st.title("The predicted price of this configuration is " + str(int(np.exp(pipe.predict(query)[0]))))
+    st.title("The predicted price of this configuration is Rs " + str(int(np.exp(pipe.predict(query)[0]))))
