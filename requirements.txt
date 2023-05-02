@@ -1,4 +1,7 @@
-streamlit
-numpy
+numpy==1.23.5
 scikit-learn==1.0.2
-pandas
+pandas==1.5.2
+pip-chill==1.0.3
+scikit-learn==1.0.2
+streamlit==1.15.1
+wincertstore==0.2
